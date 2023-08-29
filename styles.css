@@ -1,0 +1,171 @@
+/* Universal styling */
+
+html {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+body {
+    font-family: 'MuseoModerno', cursive; 
+    font-family: 'Lato', sans-serif;
+    margin: 0 5%;
+    background-image: url('resource/media/markus-spiske-iar-afB0QQw-unsplash.jpg');
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+
+li a:hover, .pureBlue:hover .manuBtn {
+    background-color: #009bd9;
+}
+
+li a:hover, .pureYellow:hover .manuBtn {
+    background-color: #fccf00;
+}
+
+li a:hover, .darkLimeG:hover .manuBtn {
+    background-color: #44af35;
+}
+li a:hover, .red:hover .manuBtn{
+    background-color: red;
+}
+
+li a:hover, .white:hover{
+    background-color: white;
+}
+/* style for the manu list */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    transition: all 0.3s ease;
+    font-family: 'MuseoModerno', cursive;    
+}
+
+li {
+    float: left;
+}
+
+li a, .menuBtn {
+    display: inline-block;
+    color: black;
+    padding: 0.75rem;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* menu effects */
+
+.home {
+    background-color: red;
+}
+
+li a:hover, .dropdownMenu:hover .menuBtn {
+    background-color: red;
+} 
+
+.menu li .dropdownMenu {
+    display: inline-block;
+}
+
+/* menu dropdown contents */
+
+.menuContent {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.menuContent a {
+    color: black;
+    padding: 1rem;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* change color for dropdown item when hover */
+
+.menuContent a:hover {
+    background-color: #f1f1f1;  
+}
+
+.dropdownMenu:hover .menuContent {
+    display: block;
+}
+
+/* styling for intro section*/
+
+.intro {
+    background-image: url('resource/media/tai-bui-Q-xGz9NOVOE-unsplash.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+.intro h1 {
+    color: white;
+    text-align: center;
+    font-size: 4em;
+    text-shadow: 3px 3px 4px black;
+    border-radius: 10px;
+}
+
+/*Testimonials section*/
+
+.testimonial {
+    color: white;
+    background-color: rgba(9, 133, 9, 0.2);
+    text-shadow: 3px 3px 4px black;
+    text-align: center;
+}
+
+/*meetup styling*/
+
+.meetups h2 {
+    color: white;
+    background-color: rgba(9, 133, 9, 0.2);
+    text-shadow: 3px 3px 4px black;
+    text-align: center;
+}
+
+.meetpics {
+    display: inline-flex;
+    /* flex-shrink: inherit; */
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    /* width: 90%; */
+}
+
+.join{
+    background-image: url('resource/media/stem-list-EVgsAbL51Rk-unsplash.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    margin-bottom: 100px;
+}
+.join h2 {
+    color: white;
+    text-align: center;
+    font-size: 3em;
+    text-shadow: 3px 3px 4px black;
+    border-radius: 10px;
+}
